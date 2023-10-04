@@ -33,7 +33,7 @@ esPositivo(entero);
 function sumarNumeros(entero) {
     var suma = 0;
     for (var i = 0; i < entero; i++) {
-        suma = entero[i] + suma;
+        suma = (i+1) + suma;
     }
     return suma;
 }
