@@ -25,8 +25,17 @@ while (intentos > 0){
     if (existeLogin(usuario)){
         if (passwordCorrecto(usuario,contraseña)) {
             alert('el nombre de usuario y la contraseña son correctos');
+            break;
+        }else{
+            alert('El nombre de usuario no coincide con la contraseña');
         }
+        
+    }else {
+        alert('el nombre de usuario no existe');
     }
+    intentos--;
 
-
+}
+if (intentos === 0){
+    alert('no te quedan intentos');
 }
